@@ -60,7 +60,7 @@ builder.Services.AddSwaggerGen(c =>
         Title       = "ECommerce Order Management API",
         Version     = "v1",
         Description = "A production-ready ASP.NET Core Web API for order management.",
-        Contact     = new OpenApiContact { Name = "Developer", Email = "dev@ecommerce.com" }
+        Contact     = new OpenApiContact { Name = "Sumit Kumar Giri", Email = "sumitkumargiri895@gmail.com" }
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
