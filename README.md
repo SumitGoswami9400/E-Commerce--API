@@ -1,5 +1,16 @@
 # 🛒 ECommerce Order Management API
 
+## 🌐 Live Dashboard
+
+Open `dashboard.html` in browser to see the live dashboard connected to the API.
+
+**Features:**
+- 📊 Real-time stats (Revenue, Orders, Products)
+- 📦 Product listing
+- 🛒 Order management
+- ➕ Place new orders
+
+
 A **production-ready** ASP.NET Core 8 Web API demonstrating clean architecture, industry-standard patterns, and real-world best practices.
 
 ---
