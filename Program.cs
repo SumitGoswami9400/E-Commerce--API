@@ -106,6 +106,7 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseCors("AllowAll");
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
@@ -118,4 +119,13 @@ using (var scope = app.Services.CreateScope())
     DbSeeder.Seed(db);
 }
 
+// Auto open browser when app starts
+var url = "http://localhost:5000/dashboard.html";
+System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+{
+    FileName = url,
+    UseShellExecute = true
+});
+
 app.Run();
+
